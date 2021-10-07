@@ -31,6 +31,6 @@ jobs:
         restore-keys: ${{ runner.os }}-m2
 
     - name: Build with Maven and Publish to GitHub Packages
-      run: mvn --batch-mode --update-snapshots deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/Archifacts/restaurant-demo
+      run: mvn --batch-mode --update-snapshots deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/Archifacts/fraktalio-restaurant-demo
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
